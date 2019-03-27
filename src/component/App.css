@@ -1,6 +1,7 @@
 body {
     font-family: 'Noto Serif', serif;
-    background-image: url('https://www.australia.com/content/australia/en_us/places/sydney-and-surrounds/guide-to-sydney/jcr:content/image.adapt.1200.HIGH.jpg');
+    /* background-image: url('https://www.australia.com/content/australia/en_us/places/sydney-and-surrounds/guide-to-sydney/jcr:content/image.adapt.1200.HIGH.jpg'); */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
+    min-height:1000px;
 }
