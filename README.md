@@ -1,4 +1,5 @@
 # React App that converts USD to selected country currency. 
+Deployed Link - [https://react-countryinfo-currency.herokuapp.com/]
 ![webCapture](https://user-images.githubusercontent.com/32689288/55108263-7631d200-5090-11e9-83df-09f6e3de5d9d.gif)
 
 ### 4 APIs are used in this app
@@ -7,8 +8,8 @@
 3) xxxxxxx to get realtime currency converion rate.
 4) Unsplash API to that displays image of selected country
 
-Deployed Link - [https://react-countryinfo-currency.herokuapp.com/]
-
+### Framework/Libraries/Packages used
+React, Bootstrap 4, Axios
 
 ## To run locally
 
