@@ -2,17 +2,8 @@ import React from 'react';
 
 
 class Dropdown extends React.Component {
-
-  // state = {
-  //   countryCode:null
-  // }
-
-
-
-
+ 
   selectValue = (e) => {
-    this.setState({ countryCode: e.target.value })
-    console.log("selected is " + e.target.value)
     this.props.CountryCodeFromDropDown(e.target.value)
   }
 

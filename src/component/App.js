@@ -60,7 +60,8 @@ class App extends React.Component {
                 selectedCountryCurrency: response.data[0].currencies[0].code,
                 selectedCountryCurrencyName: response.data[0].currencies[0].name,
                 selectedCountryCurrencySymbol: response.data[0].currencies[0].symbol,
-                selectedCountryLatLng: response.data[0].latlng
+                selectedCountryLatLng: response.data[0].latlng,
+                convertedAmount:0
             })
         }).then((response) => {
             this.BackgroundUpdateFromCountry()
@@ -82,9 +83,10 @@ class App extends React.Component {
     }
 
 
-
-
-    // https://docs.openexchangerates.org/docs/get-specific-currencies
+// ******************************************************************************
+// Function that gets the exchange rate from USD to selected countries currency
+// https://docs.openexchangerates.org/docs/get-specific-currencies
+// ******************************************************************************
     ConvertUSDToCurrency = (currency) => {
         axios.get('https://openexchangerates.org/api/latest.json', {
             params: {
@@ -131,14 +133,10 @@ class App extends React.Component {
 
 
     componentDidUpdate() {
-
-
     }
 
 
     render() {
-
-
         return (
             <div style={{ backgroundColor: `black` }}>
                 <div className="container" style={{ backgroundImage: `url("${this.state.selectedCountryBackgroundImage}")` }} >
@@ -167,12 +165,9 @@ class App extends React.Component {
                                 latLong={this.state.selectedCountryLatLng}
                             />
                         </div>
-
                         <div className="col-md-8 mb-5">
                             <CurrencyConverter symbol={this.state.selectedCountryCurrencySymbol} currencyName={this.state.selectedCountryCurrencyName} rate={this.state.selectedCurrencyConversionRate} converted={this.state.convertedAmount} GetDollarFromCurrencyConverter={this.GetDollarFromCurrencyConverter} />
                         </div>
-
-
                     </div>
                 </div>
             </div>
