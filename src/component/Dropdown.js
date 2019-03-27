@@ -25,11 +25,10 @@ class Dropdown extends React.Component {
     )
 
     return (
-      <div className="dropdown">
+      <div className="form-group">
         <div>Select Country:</div>
-
-        <select onChange={this.selectValue} >
-          <option value='undefined' >Pick from list below</option>
+        <select className="form-control" onChange={this.selectValue} >
+          <option className="dropdown-item" value='undefined' >Pick from list below</option>
           {dropDownName}
         </select>
       </div>
