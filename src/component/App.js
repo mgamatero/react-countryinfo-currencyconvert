@@ -138,8 +138,8 @@ class App extends React.Component {
 
     render() {
         return (
-            <div style={{ backgroundColor: `black` }}>
-                <div className="container" style={{ backgroundImage: `url("${this.state.selectedCountryBackgroundImage}")` }} >
+            <div className="backGround" style={{ backgroundImage: `url("${this.state.selectedCountryBackgroundImage}")` }} >
+                <div className="container" >
                     <div className="row">
                         <div className="col">
                             <div className="align-middle">
