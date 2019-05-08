@@ -1,4 +1,5 @@
-# React App that converts USD to selected country currency. 
+# react-countryinfo-currencyconvert
+### React App that converts USD to selected country currency.  Country info is displayed, and background picture updates.
 Deployed Link - [https://react-countryinfo-currency.herokuapp.com/]
 ![webCapture](https://user-images.githubusercontent.com/32689288/55108263-7631d200-5090-11e9-83df-09f6e3de5d9d.gif)
 
